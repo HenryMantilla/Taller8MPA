@@ -1,0 +1,46 @@
+###
+GET  http://localhost:3000/MVC/Usuarios
+
+###
+POST http://localhost:3000/MVC/Usuarios
+Content-Type: application/json
+
+{
+    "Nombres": "Whatever",
+    "Apellidos": "Martinez",
+    "DocumentoId": "8dd14574-9fd1-11ec-b909-0242ac120002",
+    "NumeroDocumento": "1012484844",
+    "LugarResidencia": "8dd14812-9fd1-11ec-b909-0242ac120002",
+    "FechaNacimiento": "2016-10-05",
+    "Email": "Juan@gmail.com",
+    "Telefono": "3120001112",
+    "Usuario": "Juanma",
+    "Password": "Password$ecure"
+}
+
+###
+DELETE http://localhost:3000/MVC/Usuarios/73e64380-a1ac-11ec-be2a-73d8c3db494b
+
+###
+POST http://localhost:3000/MVC/Documentos
+Content-Type: application/json
+
+{
+    "Nombre": "Pasaporte",
+    "Descripcion": "Este es el pasaporte"
+}
+
+###
+DELETE http://localhost:3000/MVC/Documentos/1fe22050-a1ad-11ec-8499-f120af1e4c73
+
+###
+POST http://localhost:3000/MVC/Residencia
+Content-Type: application/json
+
+{
+    "Nombre": "Bogota",
+    "Descripcion": "Ciudad de Bogota xd"
+}
+
+###
+DELETE http://localhost:3000/MVC/Residencia/a2747cc0-a1ad-11ec-ab0e-a9c6b616e47a
